@@ -14,3 +14,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+button, input {
+  font-weight: bold;
+  padding: .33rem;
+}
+
+.search-result {
+  font-weight: bold;
+  color: coral;
+}
+
+.search-result-active {
+  background-color: blue;
+  border: 3px solid blue;
+  border-radius: .2rem;
+}
