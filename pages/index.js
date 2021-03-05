@@ -21,6 +21,9 @@ export default function Home({ markdown }) {
     // Set() forces unique
     setSearchHistory([...new Set([...searchHistory, search])]);
 
+    // Reset search index
+    setSearchIndex(-1)
+
     contentRef.current.innerHTML = markdown.replaceAll(
       search,
       `<span class="search-result">${search}</span>`
